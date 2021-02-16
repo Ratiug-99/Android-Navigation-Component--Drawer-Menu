@@ -8,7 +8,11 @@
         android:id="@+id/fragmentOne"
         android:name="com.example.androidnavigationdrawerlayout.FragmentOne"
         android:label="fragment_one"
-        tools:layout="@layout/fragment_one" />
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentOneOne"
+            app:destination="@id/fragmentOneOne" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentTwo"
         android:name="com.example.androidnavigationdrawerlayout.FragmentTwo"
@@ -19,4 +23,10 @@
         android:name="com.example.androidnavigationdrawerlayout.FragmentFree"
         android:label="fragment_free"
         tools:layout="@layout/fragment_free" />
+    <fragment
+        android:id="@+id/fragmentOneOne"
+        android:name="com.example.androidnavigationdrawerlayout.FragmentOneOne"
+        android:label="fragment_one_one"
+        tools:layout="@layout/fragment_one_one" />
+
 </navigation>
